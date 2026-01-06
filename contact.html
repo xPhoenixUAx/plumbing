@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Plumbing</title>
+    <meta
+      name="description"
+      content="Contact details and a request form for plumbing services."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Go to home">
+          <span class="brand-mark" aria-hidden="true">P</span>
+          <span class="brand-text">Plumbing</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          data-nav-toggle
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-nav" data-nav>
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="btn btn-primary nav-cta" href="#form">Request a Call</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="kicker">Get in touch</p>
+          <h1>Contact</h1>
+          <p class="lead">
+            Tell us what you need and we’ll follow up to confirm timing.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="form">
+        <div class="container">
+          <div class="two-col">
+            <div>
+              <h2>Request service</h2>
+              <p class="muted">
+                Demo form: nothing is sent to a server. A backend can be added
+                later.
+              </p>
+
+              <form class="form" data-contact-form>
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    autocomplete="tel"
+                    placeholder="+1 (555) 000-0000"
+                    required
+                  />
+                  <p class="hint">At least 7 digits.</p>
+                </div>
+
+                <div class="field">
+                  <label for="topic">What do you need?</label>
+                  <select id="topic" name="topic">
+                    <option value="leak">Emergency leak / clog</option>
+                    <option value="install">Plumbing installation</option>
+                    <option value="appliance">Appliance hookup</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="message">Details</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Briefly describe the issue"
+                  ></textarea>
+                </div>
+
+                <div class="form-actions">
+                  <button class="btn btn-primary" type="submit">
+                    Send request
+                  </button>
+                  <p
+                    class="form-status"
+                    role="status"
+                    aria-live="polite"
+                    data-form-status
+                  ></p>
+                </div>
+              </form>
+            </div>
+
+            <aside class="note" aria-label="Contact details">
+              <h3>Contact details</h3>
+              <p class="muted">Replace the placeholders with your real info.</p>
+              <div class="contact-list">
+                <div>
+                  <div class="contact-label">Phone</div>
+                  <a class="contact-value" href="tel:+15550000000"
+                    >+1 (555) 000-0000</a
+                  >
+                </div>
+                <div>
+                  <div class="contact-label">Email</div>
+                  <a class="contact-value" href="mailto:hello@example.com"
+                    >hello@example.com</a
+                  >
+                </div>
+                <div>
+                  <div class="contact-label">Hours</div>
+                  <div class="contact-value">Mon–Sun: 9:00 AM – 8:00 PM</div>
+                </div>
+              </div>
+              <a class="btn btn-ghost" href="services.html">View services</a>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="footer-brand">Plumbing</div>
+          <p class="muted">
+            Residential plumbing: repairs, installations, appliance hookups.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+        <div class="footer-meta muted">
+          <span>© <span data-year></span> Plumbing</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
