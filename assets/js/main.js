@@ -220,6 +220,14 @@
       };
 
       overlay.addEventListener("click", (e) => {
+        const target = e.target;
+        if (target instanceof Element) {
+          const closeEl = target.closest(".modal-close");
+          if (closeEl) {
+            close();
+            return;
+          }
+        }
         if (e.target === overlay) close();
       });
 
@@ -322,6 +330,14 @@
       };
 
       overlay.addEventListener("click", (e) => {
+        const target = e.target;
+        if (target instanceof Element) {
+          const closeEl = target.closest(".modal-close");
+          if (closeEl) {
+            close();
+            return;
+          }
+        }
         if (e.target === overlay) close();
       });
 
@@ -388,5 +404,54 @@
       window.addEventListener("scroll", onScroll, { passive: true });
       window.setTimeout(check, 600);
     }
+  })();
+
+  // About: auto-rotating slides
+  (() => {
+    const slider = document.querySelector("[data-auto-slider]");
+    if (!slider) return;
+
+    const slides = Array.from(slider.children).filter(
+      (el) => el instanceof HTMLElement && el.classList.contains("media")
+    );
+    if (slides.length <= 1) return;
+
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    let index = 0;
+    let timerId = 0;
+
+    const apply = (nextIndex) => {
+      index = ((nextIndex % slides.length) + slides.length) % slides.length;
+      slides.forEach((el, i) => el.classList.toggle("is-active", i === index));
+    };
+
+    const start = () => {
+      if (timerId) return;
+      timerId = window.setInterval(() => apply(index + 1), 4200);
+    };
+
+    const stop = () => {
+      if (!timerId) return;
+      window.clearInterval(timerId);
+      timerId = 0;
+    };
+
+    // Make sure all slides have layout before stacking.
+    apply(0);
+
+    // When images load, re-apply to ensure class state is correct.
+    window.addEventListener("load", () => apply(index), { once: true });
+
+    if (prefersReducedMotion) return;
+
+    start();
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) stop();
+      else start();
+    });
   })();
 })();
