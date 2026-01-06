@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Placeholder image">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101a2f"/>
+      <stop offset="1" stop-color="#0e172a"/>
+    </linearGradient>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#78D4FF" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#5B8CFF" stop-opacity=".85"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="24" y="24" width="1152" height="752" rx="48" fill="url(#bg)" stroke="url(#stroke)" stroke-width="6"/>
+  <path d="M70 140h1060" stroke="url(#stroke)" stroke-opacity=".35" stroke-width="3"/>
+  <path d="M70 680h1060" stroke="url(#stroke)" stroke-opacity=".22" stroke-width="3"/>
+
+  <g fill="none" stroke="url(#stroke)" stroke-opacity=".7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M250 520c40-80 120-130 210-130s170 50 210 130"/>
+    <path d="M530 360c0 50-40 90-90 90s-90-40-90-90 40-90 90-90 90 40 90 90Z"/>
+
+    <path d="M710 520c30-60 90-98 160-98s130 38 160 98"/>
+    <path d="M928 385c0 40-33 73-73 73s-73-33-73-73 33-73 73-73 73 33 73 73Z"/>
+
+    <path d="M265 240h220"/>
+    <path d="M265 275h320"/>
+  </g>
+
+  <g fill="#eaf0ff" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif" text-anchor="middle">
+    <text x="600" y="120" font-size="28" opacity=".92">PLACEHOLDER IMAGE</text>
+    <text x="600" y="160" font-size="18" opacity=".72">Team photo — uniformed plumber(s), friendly portrait, clean background</text>
+  </g>
+</svg>
