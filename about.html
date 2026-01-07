@@ -3,20 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About — Plumbing</title>
+    <title>About Us — Plumbing</title>
     <meta
       name="description"
-      content="About our approach: clear communication, tidy work, and reliable results."
+      content="Learn about our process, what to expect, and why homeowners choose FlowMaster Plumbing for clean, reliable residential work."
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <script
+      defer
+      src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"
+    ></script>
     <script defer src="assets/js/main.js"></script>
   </head>
+
   <body>
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="index.html" aria-label="Go to home">
-          <span class="brand-mark" aria-hidden="true">P</span>
-          <span class="brand-text">Plumbing</span>
+          <span class="brand-mark" aria-hidden="true"
+            ><img src="/assets/img/logo.png" alt="FlowMaster Plumbing logo"
+          /></span>
+          <span class="brand-text">FlowMaster Plumbing</span>
         </a>
 
         <button
@@ -47,10 +54,15 @@
       <section class="page-hero">
         <div class="container">
           <p class="kicker">Who we are</p>
-          <h1>About</h1>
+          <h1>About Us</h1>
           <p class="lead">
-            Our goal is simple: make plumbing predictable—clear pricing, tidy
-            work, and solid results.
+            Plumbing should feel straightforward: clear answers, tidy work, and
+            a fix you can trust.
+          </p>
+          <p class="muted">
+            Jump to:
+            <a class="text-link" href="#reviews">Reviews</a> •
+            <a class="text-link" href="#story">Our story</a>
           </p>
         </div>
       </section>
@@ -66,8 +78,10 @@
                 decoding="async"
               />
               <figcaption class="muted">
-                Friendly, local crew — clean uniforms, clean work, and clear
-                communication from the first call.
+                <p class="text-description">
+                  Friendly, local crew — clean uniforms, clean work, and clear
+                  communication from the first call.
+                </p>
               </figcaption>
             </figure>
 
@@ -79,8 +93,10 @@
                 decoding="async"
               />
               <figcaption class="muted">
-                On-site diagnostics and tidy repairs — we fix leaks, installs,
-                and under-sink issues the right way.
+                <p class="text-description">
+                  Professional service On-site diagnostics and tidy repairs — we
+                  fix leaks, installs, and under-sink issues the right way.
+                </p>
               </figcaption>
             </figure>
 
@@ -92,9 +108,11 @@
                 decoding="async"
               />
               <figcaption class="muted">
-                Equipped with the tools and parts needed for most plumbing
-                repairs — so we can fix your issue fast and get your home back
-                to normal.
+                <p class="text-description">
+                  Fully stocked service vehicles Equipped with the tools and
+                  parts needed for most plumbing repairs — so we can fix your
+                  issue fast and get your home back to normal.
+                </p>
               </figcaption>
             </figure>
           </div>
@@ -151,6 +169,7 @@
               <a class="btn btn-primary" href="contact.html#form"
                 >Request service</a
               >
+            </div>
           </div>
         </div>
       </section>
@@ -269,7 +288,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="story">
         <div class="container">
           <div class="two-col">
             <div>
@@ -332,54 +351,51 @@
       <section class="section section-alt">
         <div class="container">
           <div class="section-head">
-            <h2>Trust & paperwork (placeholders)</h2>
+            <h2>Trust & paperwork</h2>
             <p class="muted">
-              Keep these only if they are accurate for your business.
+              Simple, practical details that help you feel confident before we
+              step on site.
             </p>
           </div>
 
           <div class="grid cards">
             <article class="card">
-              <img
+              <i
                 class="card-icon"
-                src="assets/img/icon-wrench.svg"
-                alt=""
-                loading="lazy"
-                decoding="async"
-              />
-              <h3>Licensed (if applicable)</h3>
+                data-lucide="clipboard-list"
+                aria-hidden="true"
+              ></i>
+              <h3>Clear scope & pricing</h3>
               <p class="muted">
-                If you are licensed in your state/city, add your license type
-                and number here. If you’re not licensed, remove this card.
+                We confirm what’s included before work starts. You’ll know the
+                plan, the options, and what may change the final total (access,
+                parts, or hidden damage).
               </p>
             </article>
             <article class="card">
-              <img
+              <i
                 class="card-icon"
-                src="assets/img/icon-pipe.svg"
-                alt=""
-                loading="lazy"
-                decoding="async"
-              />
-              <h3>Insured (if applicable)</h3>
+                data-lucide="badge-check"
+                aria-hidden="true"
+              ></i>
+              <h3>Credentials on request</h3>
               <p class="muted">
-                If you carry insurance, mention it clearly and truthfully. Avoid
-                vague claims—use exact wording you can support.
+                If licensing is required for your job in your area, we’ll share
+                the details we have available. Proof of insurance can be
+                provided when applicable.
               </p>
             </article>
             <article class="card">
-              <img
+              <i
                 class="card-icon"
-                src="assets/img/icon-drop.svg"
-                alt=""
-                loading="lazy"
-                decoding="async"
-              />
-              <h3>Warranty / guarantee</h3>
+                data-lucide="clipboard-check"
+                aria-hidden="true"
+              ></i>
+              <h3>Quality checklist</h3>
               <p class="muted">
-                Add your real warranty terms (what’s covered, how long,
-                exclusions). If you don’t offer one, replace with “Quality
-                checklist”.
+                After repairs or installs, we do a quick verification: leak
+                check, proper flow, and a clean work area. If something doesn’t
+                look right, we want to hear about it.
               </p>
             </article>
           </div>
@@ -388,38 +404,83 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <div>
-          <div class="footer-brand">FlowMaster Plumbing</div>
-          <p class="muted">
-            Residential plumbing: repairs, installations, appliance hookups.
-          </p>
-        </div>
-        <div class="footer-links">
-          <a href="services.html">Services</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Service</a>
-          <a href="cookies.html">Cookie Policy</a>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <a
+              class="footer-logo"
+              href="index.html"
+              aria-label="FlowMaster Plumbing home"
+            >
+              <img
+                class="footer-logo-img"
+                src="assets/img/logo.png"
+                alt="FlowMaster Plumbing"
+                width="42"
+                height="42"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="brand-text">FlowMaster Plumbing</span>
+            </a>
+            <p class="footer-text">
+              FlowMaster Plumbing is an online platform that helps homeowners
+              connect with independent plumbing service providers across the
+              United States.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <p class="footer-title">Quick Links</p>
+            <ul class="footer-list">
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.html#reviews">Reviews</a></li>
+              <li><a href="services.html#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <p class="footer-title">Legal</p>
+            <ul class="footer-list">
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="cookies.html">Cookie Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <p class="footer-title">Contact</p>
+            <ul class="footer-list">
+              <li>Phone: (555) 987-5432</li>
+              <li>Email: support@getflowmaster.com</li>
+              <li>Service Area: United States</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="footer-legal">
-          <p class="footer-legal-title">Website Operator</p>
-          <ul class="footer-legal-list">
-            <li><strong>Website Operator:</strong> Riptide s. r. o.</li>
-            <li>
+        <div class="footer-divider" aria-hidden="true"></div>
+
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © <span data-year></span> FlowMaster Plumbing. All rights reserved.
+          </p>
+
+          <div class="footer-company">
+            <p><strong>Website Operator:</strong> Riptide s. r. o.</p>
+            <p>
               <strong>Registered Address:</strong> Tallerova 4, 811 02
               Bratislava – mestská časť Staré Mesto, Slovakia
-            </li>
-            <li><strong>Company ID (IČO):</strong> 52 886 166</li>
-            <li>
+            </p>
+            <p><strong>Company ID (IČO):</strong> 52 886 166</p>
+            <p>
               <strong>Commercial Register:</strong> ORSR, Section Sro, Insert
               No. 143402/B
-            </li>
-            <li><strong>Date of Registration:</strong> 25.02.2020</li>
-          </ul>
-          <p class="footer-legal-disclaimer">
+            </p>
+            <p><strong>Date of Registration:</strong> 25.02.2020</p>
+          </div>
+
+          <p class="footer-disclaimer">
             <strong>Disclaimer:</strong> This site is a free service to assist
             homeowners in connecting with local service providers. All
             contractors/providers are independent and this site does not warrant
@@ -429,10 +490,6 @@
             performed. All persons depicted in a photo or video are actors or
             models and not contractors listed on this site.
           </p>
-        </div>
-
-        <div class="footer-meta muted">
-          <span>© <span data-year></span> FlowMaster Plumbing. All rights reserved.</span>
         </div>
       </div>
     </footer>

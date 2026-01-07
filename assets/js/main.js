@@ -1,4 +1,11 @@
 (() => {
+  // Lucide icons (optional)
+  (() => {
+    const lucide = window.lucide;
+    if (!lucide || typeof lucide.createIcons !== "function") return;
+    lucide.createIcons();
+  })();
+
   const nav = document.querySelector("[data-nav]");
   const toggle = document.querySelector("[data-nav-toggle]");
 
@@ -211,7 +218,10 @@
 
       const close = () => {
         overlay.classList.add("is-hidden");
-        window.setTimeout(() => overlay.remove(), 180);
+        overlay.classList.remove("is-open");
+        window.setTimeout(() => {
+          overlay.remove();
+        }, 180);
         document.removeEventListener("keydown", onKeyDown);
       };
 
@@ -321,7 +331,10 @@
 
       const close = () => {
         overlay.classList.add("is-hidden");
-        window.setTimeout(() => overlay.remove(), 180);
+        overlay.classList.remove("is-open");
+        window.setTimeout(() => {
+          overlay.remove();
+        }, 180);
         document.removeEventListener("keydown", onKeyDown);
       };
 

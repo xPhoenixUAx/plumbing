@@ -15,8 +15,10 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="index.html" aria-label="Go to home">
-          <span class="brand-mark" aria-hidden="true">P</span>
-          <span class="brand-text">Plumbing</span>
+          <span class="brand-mark" aria-hidden="true"
+            ><img src="/assets/img/logo.png" alt="FlowMaster Plumbing Logo"
+          /></span>
+          <span class="brand-text">FlowMaster Plumbing</span>
         </a>
 
         <button
@@ -150,38 +152,83 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <div>
-          <div class="footer-brand">FlowMaster Plumbing</div>
-          <p class="muted">
-            Residential plumbing: repairs, installations, appliance hookups.
-          </p>
-        </div>
-        <div class="footer-links">
-          <a href="services.html">Services</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Service</a>
-          <a href="cookies.html">Cookie Policy</a>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <a
+              class="footer-logo"
+              href="index.html"
+              aria-label="FlowMaster Plumbing home"
+            >
+              <img
+                class="footer-logo-img"
+                src="assets/img/logo.png"
+                alt="FlowMaster Plumbing"
+                width="42"
+                height="42"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="brand-text">FlowMaster Plumbing</span>
+            </a>
+            <p class="footer-text">
+              FlowMaster Plumbing is an online platform that helps homeowners
+              connect with independent plumbing service providers across the
+              United States.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <p class="footer-title">Quick Links</p>
+            <ul class="footer-list">
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.html#reviews">Reviews</a></li>
+              <li><a href="services.html#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <p class="footer-title">Legal</p>
+            <ul class="footer-list">
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="cookies.html">Cookie Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <p class="footer-title">Contact</p>
+            <ul class="footer-list">
+              <li>Phone: (555) 987-5432</li>
+              <li>Email: support@getflowmaster.com</li>
+              <li>Service Area: United States</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="footer-legal">
-          <p class="footer-legal-title">Website Operator</p>
-          <ul class="footer-legal-list">
-            <li><strong>Website Operator:</strong> Riptide s. r. o.</li>
-            <li>
+        <div class="footer-divider" aria-hidden="true"></div>
+
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © <span data-year></span> FlowMaster Plumbing. All rights reserved.
+          </p>
+
+          <div class="footer-company">
+            <p><strong>Website Operator:</strong> Riptide s. r. o.</p>
+            <p>
               <strong>Registered Address:</strong> Tallerova 4, 811 02
               Bratislava – mestská časť Staré Mesto, Slovakia
-            </li>
-            <li><strong>Company ID (IČO):</strong> 52 886 166</li>
-            <li>
+            </p>
+            <p><strong>Company ID (IČO):</strong> 52 886 166</p>
+            <p>
               <strong>Commercial Register:</strong> ORSR, Section Sro, Insert
               No. 143402/B
-            </li>
-            <li><strong>Date of Registration:</strong> 25.02.2020</li>
-          </ul>
-          <p class="footer-legal-disclaimer">
+            </p>
+            <p><strong>Date of Registration:</strong> 25.02.2020</p>
+          </div>
+
+          <p class="footer-disclaimer">
             <strong>Disclaimer:</strong> This site is a free service to assist
             homeowners in connecting with local service providers. All
             contractors/providers are independent and this site does not warrant
@@ -191,13 +238,6 @@
             performed. All persons depicted in a photo or video are actors or
             models and not contractors listed on this site.
           </p>
-        </div>
-
-        <div class="footer-meta muted">
-          <span
-            >© <span data-year></span> FlowMaster Plumbing. All rights
-            reserved.</span
-          >
         </div>
       </div>
     </footer>
